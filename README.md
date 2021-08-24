@@ -1,5 +1,5 @@
 # chrome-tab-toggle-extension
-This extension will add a shortcut to toggle through recent active tabs.
+This extension adds a shortcut to toggle through recent active tabs.
 
 #### Shortcuts
 chrome://extensions/shortcuts
@@ -11,7 +11,7 @@ chrome://extensions/shortcuts
 https://chrome.google.com/webstore/detail/tab-toggle/???
 
 #### Build
-`zip -r -j tab-toggle.zip src/*`
+`zip -r -j tab-toggle.zip *`
 
 #### Release
 Upload at https://chrome.google.com/webstore/developer/dashboard
