@@ -4,7 +4,8 @@ This extension will add a shortcut to toggle through recent active tabs.
 #### Shortcuts
 chrome://extensions/shortcuts
 * Toggle through Recent Active Tabs
-  * Default `ALT` + `Q` 
+  * **ALT Q**
+  * `MacOS` **⌥ Q**
 
 #### Install
 https://chrome.google.com/webstore/detail/tab-toggle/???
