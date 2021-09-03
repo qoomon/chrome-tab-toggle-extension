@@ -79,7 +79,7 @@ async function storageAreaProxy(cache, storageArea) {
   async function onTabClosed(windowId, tabId) {
     console.debug("tab closed");
     if (storage.recentTab.id === tabId) {
-      storage.recentTab = undefined
+      storage.recentTab = storage.previousTab
     } else if (storage.previousTab.id === tabId) {
       storage.previousTab = undefined
     }

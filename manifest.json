@@ -1,7 +1,7 @@
 {
   "name": "Tab Toggle",
   "description": "This extension adds a shortcut to toggle through recent active tabs.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Bengt Brodersen",
   
   "manifest_version": 3,
