@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        background: #1f1f1f;
+        color: #fffd;
+        margin: 0.8em 0;
+        width: 27em;
+      }
+      
+      .tab {
+        padding: .5em 2em .5em 1.5em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+      
+      .tab:hover {
+        background: #282828;
+      }
+  
+      .tab #tab-favicon {
+          margin-right: 1.3em;
+        background: #282828;
+        border-radius: 8px;
+        width: 3.1em;
+        height: 3.1em;
+      }
+      
+      .tab #tab-favicon > img {
+        height: -webkit-fill-available;
+        padding: 0.9em;
+      }
+      
+      .tab #tab-title {
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      
+      .tab.selected {
+        background: #282828;
+      }
+      
+    </style>
+  </head>
+  <body>      
+      <div id="tab-list">
+          <template id="tab-template">
+              <div class="tab">
+                <div id="tab-favicon">
+                    <img src="#">
+                </div>
+                <div id="tab-title"></div>
+              </div>
+          </template>
+      </div>
+  </body>
+</html>

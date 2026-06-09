@@ -2,21 +2,35 @@
   "manifest_version": 3,
   
   "name": "Tab Toggle",
-  "description": "This extension adds a shortcut to toggle through recent active tabs.",
-  "version": "1.0.4",
+  "description": "This extension adds a shortcut to toggle through recent tabs.",
+  "version": "2.0.0",
   "author": "Bengt Brodersen",
-
-  "permissions": [],
+  "permissions": [
+    "tabs"
+  ],
   "background": {
     "service_worker": "background.js"
   },
+  "action": {
+     "default_icon": {
+       "48": "icon-48.png"
+      },
+      "default_popup": "popup.html"
+  },
   "commands": {
-    "toggle-tabs": {
+    "toggle-tabs-back": {
       "suggested_key": {
         "default": "Alt+Q",
         "mac": "Alt+Q"
       },
-      "description": "Toggle Tabs"
+      "description": "Toggle Tabs backwards"
+    },
+    "toggle-tabs-forward": {
+      "suggested_key": {
+        "default": "Alt+Shift+Q",
+        "mac": "Alt+Shift+Q"
+      },
+      "description": "Toggle Tabs forwards"
     }
   },
   "icons": {
